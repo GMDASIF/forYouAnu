@@ -919,6 +919,26 @@
         height: auto;
         vertical-align: middle;
       }
+
+      /*edited*/
+      @media (max-width: 500px) {
+        /* Make section cards use more horizontal space on narrow screens */
+        .card-frame,
+        .closing-card,
+        .intro-card {
+          max-width: 96%;
+          width: 96%;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+
+        /* Reduce internal gaps so content fits neatly when widened */
+        .card-inner,
+        .card-inner--shayari {
+          gap: 12px;
+          padding: 12px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -1220,3 +1240,4 @@
     </script>
   </body>
 </html>
+
